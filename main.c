@@ -3,15 +3,35 @@
 
 int main()
 {
-    int n = 0 ;
-    int num ;
-    printf("entrer un nombre \n");
-    scanf("%d", &num);
-    do
+
+    int nbr;
+    printf("entrer un nombre");
+    scanf("%d", &nbr);
+
+    for (int i = 2; i < nbr - 1; i++)
     {
-        n = (n*10) + (num%10) ;
-        num = num/10;
-    }while(num!=0);
-    printf("%d",n);
+        if (nbr % i != 0)
+        {
+            printf("%d est premier",nbr);
+            break;
+        }
+        else
+        {
+
+            printf("%d est non  premier",nbr);
+            break;
+        }
+        if (nbr == 2)
+        {
+            printf("%d est premier",nbr);
+            break;
+        }
+        if (nbr == 1)
+        {
+            printf("%d est premier",nbr);
+            break;
+        }
+    }
+
     return 0;
 }

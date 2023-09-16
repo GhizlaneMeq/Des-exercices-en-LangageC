@@ -17,7 +17,18 @@ int main()
         }
         else
         {
+
             printf("%d est non  premier",nbr);
+            break;
+        }
+        if (nbr == 2)
+        {
+            printf("%d est premier",nbr);
+            break;
+        }
+        if (nbr == 1)
+        {
+            printf("%d est premier",nbr);
             break;
         }
     }
